@@ -25,8 +25,6 @@ class MagicalArena {
      * @returns {void}
      */
     fight({ attacker, defender }) {
-        console.log(attacker);
-        console.log(defender)
         // Attacker and Defender rolls the dice
         /**
          * @type {Int}
@@ -52,7 +50,7 @@ class MagicalArena {
 
     /**
      * @description The Magical Arena game played between 2 players
-     * @returns {void}
+     * @returns {Int} Return 1 if player A wins otherwise return 0
      */
     game() {
         // Player with less health would start the game
@@ -78,9 +76,10 @@ class MagicalArena {
 
         if(this.playerA.isAlive) {
             console.log("Player A Wins the Magical Arena");
-            return;
+            return 1;
         }
         console.log("Player B Wins the Magical Arena");
+        return 0;
     }
 }
 

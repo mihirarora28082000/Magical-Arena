@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "test": "jest --silent",
     "start": "node index.js"
   },
   "license": "ISC",
-  "description": "Magical Arena Game"
+  "description": "Magical Arena Game",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

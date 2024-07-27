@@ -13,10 +13,10 @@ module.exports = {
     PLAYER_A: {
         ATTACK: 10,
         STRENGTH: 5,
-        HEALTH: 20
+        HEALTH: 50
     },
     PLAYER_B: {
-        ATTACK: 20,
+        ATTACK: 5,
         STRENGTH: 10,
         HEALTH: 100
     }
