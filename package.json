@@ -1,0 +1,11 @@
+{
+  "name": "magical-arena",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "node index.js"
+  },
+  "license": "ISC",
+  "description": "Magical Arena Game"
+}
