@@ -12,7 +12,7 @@ describe('Test Magical Arena', () => {
         // Define Test Players
         playerA = new Player({ health: 40, attack: 10, strength: 5 });
         playerB = new Player({ health: 50, attack: 5, strength: 10 });
-    
+
         // Mock Dice to return a fixed value
         dicePlayerAMock = jest.spyOn(playerA, 'dice').mockReturnValue(5);
         dicePlayerBMock = jest.spyOn(playerB, 'dice').mockReturnValue(2);

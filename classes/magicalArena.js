@@ -56,25 +56,25 @@ class MagicalArena {
         // Player with less health would start the game
         let attacker = this.playerA.health > this.playerB.health ? this.playerB : this.playerA;
         let defender = attacker === this.playerA ? this.playerB : this.playerA;
-        
+
         // Fight number
         let fightNumber = 0;
 
-        while(attacker.isAlive && defender.isAlive) {
-            fightNumber+=1;
+        while (attacker.isAlive && defender.isAlive) {
+            fightNumber += 1;
 
             console.log(`Fight Number - ${fightNumber}`)
             console.log(`Player A current health ${this.playerA.health}`);
             console.log(`Player B current health ${this.playerB.health}`);
-            this.fight({attacker: attacker, defender: defender});
+            this.fight({ attacker: attacker, defender: defender });
 
             // Swap roles of attacker and defender after the fight
             let role = attacker;
-            attacker = defender; 
+            attacker = defender;
             defender = role;
         }
 
-        if(this.playerA.isAlive) {
+        if (this.playerA.isAlive) {
             console.log("Player A Wins the Magical Arena");
             return 1;
         }
