@@ -13,9 +13,29 @@ class Player {
         strength,
         attack
     }) {
-        this.health = health
-        this.strength = strength
-        this.attack = attack
+        this.health = health;
+        this.strength = strength;
+        this.attack = attack;
+
+        /**
+         * @description Getter which returns weather a person is Alive or Not
+         * @param {Int} minium
+         * @param {Int} maximum
+         * @returns {Int}
+        */
+        Object.defineProperty(this, 'isAlive', {
+            get: () => this.health > 0
+        })
+    }
+
+    /**
+     * @description Denotes the player's dice which returns a random integer between minimum and maximum
+     * @param {Int} minium
+     * @param {Int} maximum
+     * @returns {Int}
+    */
+    dice({ minimum, maximum }) {
+        return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
     }
 }
 
